@@ -57,7 +57,7 @@
 			It is provided with corresponding metadata (track title, artist, album, genre), annotated by Yacast.
 		</audio>
 		<annotation>
-			syncoccur-annote.xml: a global XML file on a GIT server contains the annotations (i.e. the possible corrections) for all items.
+			annote.xml: a global XML file on a GIT server contains the annotations (i.e. the possible corrections) for all items.
 		</annotation>
 	</storage>
 	
