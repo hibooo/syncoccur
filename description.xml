@@ -1,0 +1,64 @@
+<corpus>
+	
+	<corpusID>corpus:audioID:IRCAM:SyncOccur:2012:version1.0</corpusID>
+	<version>1.0</version>
+	<release>2012-11-30</release>
+	<author>Mathieu Ramona</author>
+	<contact>mathieu.ramona.pro@gmail.com</contact>
+	<source>http://www.mathieuramona.com/wp/syncoccur-corpus</source>
+	<institution>IRCAM</institution>
+	
+	<raw>
+		<definition>
+			<id>a13</id>
+			<type>sampled</type>
+			<number>10000 pairs</number>
+			<sampling>Detected by the occurrence synchronization algorithm detailed in M. Ramona and G. Peeters, "Automatic alignment of audio occurrences: application to the verification and synchronization of audio fingerprinting annotation," in Proc. DAFX '11, 2011, pp. 429-436.</sampling>
+			<source>French broadcast radio</source>
+		</definition>
+		<media>
+			<encoding>MPEG-4 AAC</encoding>
+			<bitrate>96</bitrate>
+			<channels>mono</channels>
+		</media>
+	</raw>
+	
+	<annotations>
+		<origin>
+			<id>b15</id>
+			<type>manual</type>
+		</origin>
+		<definitions>
+			<concepts>
+				Each pair of audio samples contain two occurrences of the same musical track that are perfectly synchronized, but submitted to varying audio processes.
+			</concepts>
+			<rules>
+				A XML file describes all pairs.
+				The first version is automatically generated.
+				Next versions are manually corrected.
+				If the two samples contain different musical tracks or different edits, or are not synchronized, it should be corrected.
+				If one sample contains additional noise (e.g. spoken voice added to the music), it shoudl be corrected.
+			</rules>
+		</definitions>
+		<quality>
+			<annotators>
+				Collaborative. Researchers, users of the corpus.
+			</annotators>
+			<reliability>
+				All corrections are checked and validated by the creator of the corpus (Mathieu Ramona).
+			</reliability>
+		</quality>
+		<tools>Any audio player (stereo version combining both samples is provided).</tools>
+	</annotations>
+
+	<storage>
+		<audio>
+			Each audio pair is provided with a unique item index.
+			It is provided with corresponding metadata (track title, artist, album, genre), annotated by Yacast.
+		</audio>
+		<annotation>
+			syncoccur-annote.xml: a global XML file on a GIT server contains the annotations (i.e. the possible corrections) for all items.
+		</annotation>
+	</storage>
+	
+</corpus>
