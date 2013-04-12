@@ -37,7 +37,7 @@
 				The first version is automatically generated.
 				Next versions are manually corrected.
 				If the two samples contain different musical tracks or different edits, or are not synchronized, it should be corrected.
-				If one sample contains additional noise (e.g. spoken voice added to the music), it shoudl be corrected.
+				If one sample contains additional noise (e.g. spoken voice added to the music), it should be corrected.
 			</rules>
 		</definitions>
 		<quality>
@@ -48,13 +48,17 @@
 				All corrections are checked and validated by the creator of the corpus (Mathieu Ramona).
 			</reliability>
 		</quality>
-		<tools>Any audio player (stereo version combining both samples is provided).</tools>
+		<tools>
+			Any audio player (stereo version combining both samples is provided).
+		</tools>
 	</annotations>
 
 	<storage>
 		<audio>
 			Each audio pair is provided with a unique item index.
-			It is provided with corresponding metadata (track title, artist, album, genre), annotated by Yacast.
+			The "_stream" suffixed file contains the occurence cut from the test audio stream.
+			The "_scaled" suffixed file contains the source item scaled to match synchroniously with the other file.
+			The "_mix"    suffixed file contains the stereo mix of both audio chunks to assess their synchronicity.
 		</audio>
 		<annotation>
 			annote.xml: a global XML file on a GIT server contains the annotations (i.e. the possible corrections) for all items.
